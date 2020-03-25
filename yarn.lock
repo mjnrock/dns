@@ -9,6 +9,11 @@ dns-packet@^5.2.1:
   dependencies:
     ip "^1.1.5"
 
+dnsjack@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/dnsjack/-/dnsjack-1.0.0.tgz#ad10c638623e8e9cfed3fc2a1ebca96df0385f36"
+  integrity sha1-rRDGOGI+jpz+0/wqHrypbfA4XzY=
+
 ip@^1.1.5:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/ip/-/ip-1.1.5.tgz#bdded70114290828c0a039e72ef25f5aaec4354a"

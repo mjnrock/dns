@@ -1,15 +1,7 @@
-//  https://github.com/mafintosh/dns-packet
+var jack = require("dnsjack").createServer();
 
-const dnsPacket = require("dns-packet");
-const dgram = require("dgram");
-
-const socket = dgram.createSocket("udp4");
-
-socket.on("message", message => {
-    console.log(dnsPacket.decode(message)) // prints out a response from google dns
+jack.route([ "*.kiszkabuddha.com" ], "192.168.86.100");
+jack.on("resolve", function(data) {
+	console.log(data.rinfo.address, "is resolving", data.domain);
 });
-
-const PORT = 53;
-const HOST = "192.168.86.100";
-
-socket.bind(PORT, HOST);
+jack.listen();
