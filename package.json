@@ -9,7 +9,7 @@
         "start": "node index.js"
     },
     "dependencies": {
-        "dns-packet": "^5.2.1",
+        "dns-packet": "^5.2.2",
         "dnsjack": "^1.0.0"
     }
 }
